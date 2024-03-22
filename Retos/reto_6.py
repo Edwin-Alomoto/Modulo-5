@@ -33,12 +33,8 @@ class auto:
       print("ya estoy usado")
     elif auto_nuevo.kiometraje>100000:
       print("¡ya dejame descansar!")
-    
 
-
-
-
-auto_nuevo = auto("TOYOTA", "RAV4", 2023 )
+auto_nuevo = auto("KIA", "SPORTAGE", 2023 )
 auto.mostrar_informacion()
 auto.actualizar_kilometraje(10000)
 auto.realizar_viaje(30000)
