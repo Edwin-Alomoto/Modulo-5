@@ -18,7 +18,7 @@ class Laptop:
     resultado ={
       "MARCA":f"{self.marca}",
       "PROCESADOR":f"{self.procesador}",
-      "MEMORIA RAM": "ok" if self.memoria>=8 else "Aumentar memoria Ram",
+      "MEMORIA DISCO DURO": f"{self.memoria} gb",
       "BATERIA": "OK" if random.choice([True,False]) else "Cambiar bateria"
     }
     return resultado
