@@ -22,6 +22,16 @@ class Laptop:
       "BATERIA": "OK" if random.choice([True,False]) else "Cambiar bateria"
     }
     return resultado
+  #POLIFORMISMO
+  def realizar_informe_uso(self):
+    #DICIONARIO DE DATOS
+    resultado_informe = {
+      "Tipo": "Generica",
+      "Uso recomendado": "tarea cotidianas",
+      "hora de uso": 5,
+      "Diagnostico actual": self.realizar_diagnostico_sistema()
+    }
+    return resultado_informe
   # METODO ESTATICO
   @staticmethod
   def comparar_costo(laptop1,laptop2):

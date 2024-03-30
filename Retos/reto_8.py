@@ -23,6 +23,11 @@ class Laptop_Business(Laptop):
         conectividad = random.choice([True,False])
       resultados[aspecto_conectividad_wifi] = f"{conectividad}"
     return resultados
+  
+  #METODO PARA MOSTRAR 
+  def __str__(self) -> str:
+    return f" marca: {self.marca} \n procesador: {self.procesador} \n memoria: {self.memoria} \n costo: {self.costo} \n impuesto: {self.impuesto} \n"
+    
 
 laptop_juanito = Laptop_Business("MSI","I7",500)
-print(laptop_juanito.realizar_diagnostico_sistema())
+#print(laptop_juanito.realizar_diagnostico_sistema())

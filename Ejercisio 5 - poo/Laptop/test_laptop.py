@@ -15,7 +15,14 @@ from laptop_gaming import Laptop_Gaming # SE HEREDA EL METODO CONSTRUCTOR
 #   asus_laptop = Laptop.asus_laptop(numero)
 #   print(asus_laptop.__dict__)
 
-laptop_juanito = Laptop_Gaming("MSI","I7",4,"RTX 8GB")
-print(laptop_juanito.realizar_diagnostico_sistema())
 
+# print(laptop_juanito.realizar_diagnostico_sistema())
+def imprimir_informe(Laptop):
+  informe = Laptop.realizar_informe_uso()
+  for clave, valor in informe.items():
+    print(f"{clave}:{valor}")
+  print("\n")
+
+laptop_juanito = Laptop_Gaming("MSI","I7",4,"RTX 8GB")
+imprimir_informe(laptop_juanito)
 
